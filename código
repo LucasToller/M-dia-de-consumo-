@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+double QuilometragemInicial, QuilometragemAtual, QuilometragemPercorrida, QuantidadeDeLitrosDeGasolina, PreçoPorLitro, GastoDeGasolina, MédiaDeConsumo;
+  
+cout << "Digite a quilometragem inicial do seu veículo: ";
+cin >> QuilometragemInicial;
+cout << "Digite a quilometragem atual do seu veículo: ";
+cin >> QuilometragemAtual;
+cout << "Digite a quantidade (em litros) abastecida em seu veículo: ";
+cin >> QuantidadeDeLitrosDeGasolina;
+cout << "Digite o preço pago (em reais) por litro de gasolina: ";
+cin >> PreçoPorLitro;
+
+// Calcula a diferença de quilometragem do veículo
+QuilometragemPercorrida =  (QuilometragemAtual - QuilometragemInicial);
+cout << "O veículo percorreu (em km): " << QuilometragemPercorrida << endl;
+
+// Calcula o gasto de gasolina do veículo
+GastoDeGasolina = (QuantidadeDeLitrosDeGasolina * PreçoPorLitro);
+cout << "O gasto de gasolina do veículo foi de:R$ " << GastoDeGasolina << endl;
+
+// Calcula a média de gasto de gasolina por litro percorrido
+MédiaDeConsumo = (QuilometragemPercorrida / QuantidadeDeLitrosDeGasolina);
+cout << "O consumo médio do veículo (km/litro) é de: " << MédiaDeConsumo << endl;
+
+
+return 0;
+}
+
